@@ -1,0 +1,33 @@
+name: lume_ai
+description: Lume AI App
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^1.2.0
+  youtube_explode_dart: ^2.5.3
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+  intl: ^0.19.0
+  url_launcher: ^6.2.5
+  audioplayers: ^5.2.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
+    - assets/icon.png
