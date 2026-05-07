@@ -15,6 +15,7 @@ LUME AI is a Flutter mobile app for reflective journaling with AI-assisted mood 
 - `youtube_explode_dart` (artist/video metadata)
 - `shared_preferences` (local storage)
 - `audioplayers` (in-app audio)
+ - Note: local MP3 soundscape playback has been removed to reduce repository size; recommendations still open in external players (YouTube links).
 
 ## Getting Started
 

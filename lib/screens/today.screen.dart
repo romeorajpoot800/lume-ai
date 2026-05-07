@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'journal_screen.dart';
 import 'saved_journals_screen.dart';
 import 'emoji_screen.dart';
-import 'lume_sounds_screen.dart';
+import 'sounds_screen.dart';
 
 class TodayScreen extends StatelessWidget {
   const TodayScreen({super.key});
@@ -61,9 +61,15 @@ class TodayScreen extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              _exercise(context, "Lume Sounds", Icons.music_note_rounded,
+                    _exercise(context, "Lume Sounds", Icons.music_note_rounded,
                       () => Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => const LumeSoundsScreen()))),
+                      MaterialPageRoute(builder: (_) => SoundsScreen(
+                  mood: "neutral",
+                  language: "global",
+                  journal: "",
+                  intentData: {'reference': null},
+                  fromJournal: false,
+                      )))),
             ],
           ),
         ),
